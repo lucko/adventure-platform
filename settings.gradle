@@ -1,9 +1,9 @@
 rootProject.name = 'adventure-platform-parent'
 
-['legacy-text3'].each {
-  include "text-serializer-$it"
-  findProject(":text-serializer-$it")?.name = "adventure-text-serializer-$it"
-}
+//['legacy-text3'].each {
+//  include "text-serializer-$it"
+//  findProject(":text-serializer-$it")?.name = "adventure-text-serializer-$it"
+//}
 
 include 'api'
 findProject(':api')?.name = 'adventure-platform-api'

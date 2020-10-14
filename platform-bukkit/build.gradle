@@ -13,6 +13,7 @@ repositories {
 
 dependencies {
   api project(":adventure-platform-api")
+  compileOnly 'us.myles:viaversion-common:3.0.0'
   compileOnly 'io.netty:netty-all:4.0.23.Final' // for pre-1.13 book sending
   testImplementation compileOnly('com.destroystokyo.paper:paper-api:1.15.2-R0.1-SNAPSHOT')
 }
